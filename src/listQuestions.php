@@ -11,7 +11,7 @@
   <?php 
   $result = getAllQuestions();
     while($row = $result->fetch_assoc()) {
-      echo '<div><a href="./q.php?id=' . $row['Id'] .'">' . $row['Title'] . '</a></div>';
+      echo '<div><a href="./question.php?id=' . $row['Id'] .'">' . $row['Title'] . '</a></div>';
     }
   ?>
 </body>
