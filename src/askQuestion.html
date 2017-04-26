@@ -1,32 +1,43 @@
 <html>
-<header>
+<head>
     <title>Ask Question - IdeaWeb</title>
 
-    <!-- Bootstrap -->
-    <link href="lib\bootstrap\css\bootstrap.min.css" rel="stylesheet">
-</header>
+
+    <link href="css/master.css" rel="stylesheet">
+</head>
 
 <body>
+   <header>
+		<a href="home.html" class="header">Idea Web</a>
+   </header>
+   
+   <h3 class="instruction">Ask a question by completeing the form below.</h3>
+   <h4 class="instruction"> Or... view questions by clicking <a href="listQuestions.php" style="color:white">Here</a></h4>
+   <br/>
+   
+   <div class="questionForm">
     <form action="askQuestion.php" method="post">
         <div class="form-group">
             <label>
-                    Username:
+                    <p class="formtext">Username:</p>
                     <input class="form-control" type="text" name="username" required />
                 </label>
         </div>
         <div class="form-group">
             <label>
-                    Title:
+                    <p class="formtext">Title:</p>
                     <input class="form-control" type="text" name="title" required />
                 </label>
         </div>
         <div class="form-group">
-            <label>Question:
+            <label>
+                   	<p class="formtext">Question:</p>
                     <textarea class="form-control" name="question" rows="5.5" cols="42"></textarea>
                 </label>
         </div>
-        <input class="btn btn-default" type="submit" value="Ask Question">
+        <input class="askButton" type="submit" value="Ask Question">
     </form>
+    </div>
 </body>
 
 </html>
