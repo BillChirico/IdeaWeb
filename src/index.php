@@ -1,6 +1,6 @@
 <html>
 <header>
-  <title>Idea Web</title>
+  <title>IdeaWeb</title>
 </header>
 
 <body>
