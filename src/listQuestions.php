@@ -1,9 +1,5 @@
 <?php 
-include 'functions.php';
-
-
-
-
+  include 'functions.php';
 ?>
 
 <html>
@@ -15,7 +11,7 @@ include 'functions.php';
   <?php 
   $result = getAllQuestions();
     while($row = $result->fetch_assoc()) {
-    echo $row['Username'];
+      echo '<div><a href="./q.php?id=' . $row['Id'] .'">' . $row['Title'] . '</a></div>';
     }
   ?>
 </body>

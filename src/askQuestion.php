@@ -1,5 +1,5 @@
 <?php
-$connection = mysqli_connect('localhost', 'b', 'b', 'ideaweb') or die('Error connecting to MySQL server.');
+$connection = mysqli_connect('localhost', 'johnsmith', 'pass', 'johnsmithdatabase') or die('Error connecting to MySQL server.');
 
 $username = $_POST['username'];
 $title = $_POST['title'];

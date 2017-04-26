@@ -1,0 +1,32 @@
+<html>
+<header>
+    <title>Ask Question - IdeaWeb</title>
+
+    <!-- Bootstrap -->
+    <link href="lib\bootstrap\css\bootstrap.min.css" rel="stylesheet">
+</header>
+
+<body>
+    <form action="askQuestion.php" method="post">
+        <div class="form-group">
+            <label>
+                    Username:
+                    <input class="form-control" type="text" name="username" required />
+                </label>
+        </div>
+        <div class="form-group">
+            <label>
+                    Title:
+                    <input class="form-control" type="text" name="title" required />
+                </label>
+        </div>
+        <div class="form-group">
+            <label>Question:
+                    <textarea class="form-control" name="question" rows="5.5" cols="42"></textarea>
+                </label>
+        </div>
+        <input class="btn btn-default" type="submit" value="Ask Question">
+    </form>
+</body>
+
+</html>
