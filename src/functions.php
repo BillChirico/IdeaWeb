@@ -28,4 +28,13 @@ function getQuestion($id)
 
     return $result->fetch_assoc();
 }
+
+function postAnswer($username, $answer)
+{
+    $connection = mysqli_connect('localhost', 'johnsmith', 'pass', 'johnsmithdatabase') or die('Error connecting to MySQL server.');
+
+    $sql = "INSERT INTO Answer (Username, Answer) VALUES ('$username', '$answer')";
+
+    return $connection->query($sql);
+}
 ?>
