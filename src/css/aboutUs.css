@@ -1,0 +1,203 @@
+@charset "utf-8";
+	body {
+  		font-family: helvetica, sans-serif;
+  		margin: 0 auto;
+		background: #333333;
+ 		max-width: 1400px;
+
+	}
+
+	
+	header{
+		background: #555555;
+    	width: 100%;
+		color: #999999;
+		margin: 0 auto;
+		text-align: center;
+	}
+
+	a.header{
+		padding-top: 20px;
+		font-size: 20px;
+		color: #999999;
+		text-decoration: none;
+	}
+	
+
+	p.like{
+		font-family: 'Oswald', sans-serif;
+		color:white;
+	}
+	
+	p.fancy{
+		display: inline-block;
+		font-family: 'Cuprum', sans-serif;
+		text-align: center;
+		font-size: 50px;
+	
+	}
+	
+
+
+	p.left{
+		font-family: 'Open Sans Condensed', sans-serif;
+		font-size: 27px;
+		line-height: 23px;
+		padding: 23px 20px 0 20px;
+		text-align: justify;
+		-moz-text-align-last: center;
+    	text-align-last: center;
+	}
+
+	
+	h1{
+		font-family: 'Cuprum', sans-serif;
+		font-size: 60px;
+		text-align: center;
+		
+
+	}
+	
+	h2{
+		padding: 0 20px 0 20px;
+		text-align: justify;
+		-moz-text-align-last: center;
+    	text-align-last: center;
+
+	}
+
+
+
+	.leftside {
+    	display: inline-block;
+		background: rgba(0,0,0,0.3);
+		color: white;
+		margin-left: 80px;
+		margin-bottom: 30px;
+		width: 600px;
+		height: 500px;
+		position: relative;
+		font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
+	}
+	
+
+	.rightside {
+     	display: inline-block;
+		background: url("http://i.imgur.com/xkNQqql.jpg");
+		background-size: cover;
+		background-position: 50% 100%;
+		margin-right: 80px;
+		margin-bottom: 30px;
+		color: black;
+		width: 600px;
+		height: 500px;
+		position: relative;
+		float: right;
+	}
+
+
+	.leftwill{
+	    display: inline-block;
+		background: url("http://i.imgur.com/ADo7PH1.jpg");
+		background-size: cover;
+		background-position: 50% 100%;
+		margin-left: 80px;
+		margin-bottom: 30px;
+		color: black;
+		width: 600px;
+		height: 500px;
+		position: relative;
+
+	}
+
+	.rightwill{
+	    display: inline-block;
+		background: rgba(0,0,0,0.3);
+		color: white;
+		margin-right: 80px;
+		margin-bottom: 30px;
+		width: 600px;
+		height: 500px;
+		position: relative;
+		font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
+		float: right;
+	}
+
+
+	
+	.bottom{
+		display: block;
+		background: rgba(0,0,0,0.3);
+		color: white;
+		margin-left: 80px;
+		margin-right: 80px;
+		padding: 0 0 0px 10px;
+		width: 1225px;
+		height: auto;
+		font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
+	}
+
+.button{
+	display: inline;
+}
+
+@media (max-width: 1100px) {
+	.leftside{
+		display: block;
+		background: rgba(0,0,0,0.3);
+		color: white;
+		margin: 0 auto;
+		width: 400px;
+		height: 450px;
+		position: relative;
+		font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
+	}
+	
+	p.left{
+		font-family: 'Open Sans Condensed', sans-serif;
+		font-size: 22px;
+		line-height: 19px;
+		padding: 23px 20px 0 20px;
+		text-align: justify;
+		-moz-text-align-last: center;
+    	text-align-last: center;
+	}
+	
+	.rightside {
+     	display: block;
+		background: url("http://i.imgur.com/xkNQqql.jpg");
+		background-size: cover;
+		background-position: 50% 100%;
+		color: black;
+		width: 400px;
+		height: 450px;
+		margin: 0 auto;
+		margin-top: 10px;
+		margin-bottom: 10px;
+		position: relative;
+		float:none;
+
+	}
+	
+	.bottom{
+     	display: block;
+		background: rgba(0,0,0,0.3);
+		color: white;
+		margin: 0 auto;
+		padding: 0 auto;
+		margin-bottom: 10px;
+		height: 100px;
+		width: 400px;
+		font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
+	}
+	
+	h3{
+		font-size: 15px;
+		text-align: center;
+	}
+	
+	p{
+		font-size: 15px;
+		text-align:center;
+	}
+}
