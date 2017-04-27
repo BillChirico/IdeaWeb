@@ -29,11 +29,20 @@ function getQuestion($id)
     return $result->fetch_assoc();
 }
 
-function postAnswer($username, $answer)
+function postAnswer($username, $answer, $questionId)
 {
     $connection = mysqli_connect('localhost', 'johnsmith', 'pass', 'johnsmithdatabase') or die('Error connecting to MySQL server.');
 
-    $sql = "INSERT INTO Answer (Username, Answer) VALUES ('$username', '$answer')";
+    $sql = "INSERT INTO Answer (Username, Answer, QuestionId) VALUES ('$username', '$answer', $questionId)";
+
+    return $connection->query($sql);
+}
+
+function getAnswers($questionId)
+{
+    $connection = mysqli_connect('localhost', 'johnsmith', 'pass', 'johnsmithdatabase') or die('Error connecting to MySQL server.');
+
+    $sql = "SELECT * FROM Answer WHERE QuestionId='$questionId'";
 
     return $connection->query($sql);
 }
