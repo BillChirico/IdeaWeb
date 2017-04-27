@@ -85,3 +85,6 @@ a.questionlink:hover + .arrowright{
 	display: block;
 }
 
+a.questionlink:hover + .arrowright{
+	display: block;
+}

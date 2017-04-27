@@ -56,6 +56,28 @@ h4.instruction{
 	line-height: 200%;
 }
 
+.showquestion{
+	margin: 0 auto;
+	height:auto;
+	width: 900px;
+	background-color: #999999;
+	text-align: left;
+	line-height: 200%;
+	margin-bottom: 50px;
+	padding-left: 20px;
+}
+
+.showreply{
+	margin: 0 auto;
+	margin-top: 5px;
+	height: auto;
+	width: 910px;
+	background-color: #999999;
+	text-align: left;
+	line-height: 100%;
+	padding-left: 10px;
+}
+
 a.questionlist{
 	color: #333333;
 }
