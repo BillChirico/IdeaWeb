@@ -4,6 +4,8 @@
     $id = $_GET['id'];
 
     $r = getQuestion($id);
+	
+	$answers = getAnswers($id);
 ?>
 
 <html>
@@ -22,11 +24,11 @@
     	<h3>Title: <?php echo $r['Title'] ?></h3>
     	<h3>Question: <?php echo $r['Question'] ?></h3>
    </div>
-   
-   <div class="showreply">
-   		<h3>This is a test reply</h3>
-   	
-   </div>
+   <?php 
+		while($row = $answers->fetch_assoc()) {
+			echo '<div class="showreply"><h3>User: '. $row['Username'] .'</h3><h3>Answer: ' . $row['Answer'] . '</div>';
+		}
+   ?>
 </body>
 
 </html>
