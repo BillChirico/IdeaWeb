@@ -1,5 +1,6 @@
 <?php
 
+// Ask a new question.
 function askQuestion($username, $title, $question)
 {
     $connection = mysqli_connect('localhost', 'williamchirico', 'williamchiricopass', 'williamchiricodatabase') or die('Error connecting to MySQL server.');
@@ -9,6 +10,7 @@ function askQuestion($username, $title, $question)
     return $connection->query($sql);
 }
 
+// Get all of the questions.
 function getAllQuestions()
 {
     $connection = mysqli_connect('localhost', 'williamchirico', 'williamchiricopass', 'williamchiricodatabase') or die('Error connecting to MySQL server.');
@@ -18,6 +20,7 @@ function getAllQuestions()
     return $connection->query($sql);
 }
 
+// Get the details of a question.
 function getQuestion($id)
 {
     $connection = mysqli_connect('localhost', 'williamchirico', 'williamchiricopass', 'williamchiricodatabase') or die('Error connecting to MySQL server.');
@@ -29,6 +32,7 @@ function getQuestion($id)
     return $result->fetch_assoc();
 }
 
+// Post an answer to a question.
 function postAnswer($username, $answer, $questionId)
 {
     $connection = mysqli_connect('localhost', 'williamchirico', 'williamchiricopass', 'williamchiricodatabase') or die('Error connecting to MySQL server.');
@@ -38,6 +42,7 @@ function postAnswer($username, $answer, $questionId)
     return $connection->query($sql);
 }
 
+// Get the answers for a question.
 function getAnswers($questionId)
 {
     $connection = mysqli_connect('localhost', 'williamchirico', 'williamchiricopass', 'williamchiricodatabase') or die('Error connecting to MySQL server.');
