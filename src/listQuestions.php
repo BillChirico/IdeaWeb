@@ -10,7 +10,7 @@
 
 <body>
 	<header>
-		<a href="home.html" class="header">Idea Web</a>
+		<a href="index.html" class="header">Idea Web</a>
 	</header>
 	
 	<center>

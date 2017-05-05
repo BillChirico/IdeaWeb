@@ -8,7 +8,7 @@
 
 <body>
    <header>
-		<a href="home.html" class="header">Idea Web</a>
+		<a href="index.html" class="header">Idea Web</a>
    </header>
    <h3 class="instruction">Answer the question by completeing the form below.</h3>
    <h4 class="instruction"> Or... view other questions by clicking <a href="listQuestions.php" style="color:white">Here</a></h4>
