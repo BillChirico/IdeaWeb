@@ -3,9 +3,9 @@
 
     $id = $_GET['id'];
 
-    /*$r = getQuestion($id);
+    $r = getQuestion($id);
 	
-	answers = getAnswers($id);*/
+	$answers = getAnswers($id);
 ?>
 
 <html>

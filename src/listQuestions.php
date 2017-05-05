@@ -16,7 +16,7 @@
 	<center>
 		</br>
 		</br>
-	<a href="question.php" style="color:white">Ask a question</a></h4>
+	<a href="askQuestion.html" style="color:white">Ask a question</a></h4>
 	</center>
  
  <div class="questionlist">
