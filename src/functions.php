@@ -2,7 +2,7 @@
 
 function askQuestion($username, $title, $question)
 {
-    $connection = mysqli_connect('localhost', 'johnsmith', 'pass', 'johnsmithdatabase') or die('Error connecting to MySQL server.');
+    $connection = mysqli_connect('localhost', 'williamchirico', 'williamchiricopass', 'williamchiricodatabase') or die('Error connecting to MySQL server.');
 
     $sql = "INSERT INTO Question (Title, Question, Username, Votes) VALUES ('$title', '$question', '$username', 0)";
 
@@ -11,7 +11,7 @@ function askQuestion($username, $title, $question)
 
 function getAllQuestions()
 {
-    $connection = mysqli_connect('localhost', 'johnsmith', 'pass', 'johnsmithdatabase') or die('Error connecting to MySQL server.');
+    $connection = mysqli_connect('localhost', 'williamchirico', 'williamchiricopass', 'williamchiricodatabase') or die('Error connecting to MySQL server.');
 
     $sql = "SELECT * FROM Question";
 
@@ -20,7 +20,7 @@ function getAllQuestions()
 
 function getQuestion($id)
 {
-    $connection = mysqli_connect('localhost', 'johnsmith', 'pass', 'johnsmithdatabase') or die('Error connecting to MySQL server.');
+    $connection = mysqli_connect('localhost', 'williamchirico', 'williamchiricopass', 'williamchiricodatabase') or die('Error connecting to MySQL server.');
 
     $sql = "SELECT * FROM Question WHERE Id='$id'";
 
@@ -31,7 +31,7 @@ function getQuestion($id)
 
 function postAnswer($username, $answer, $questionId)
 {
-    $connection = mysqli_connect('localhost', 'johnsmith', 'pass', 'johnsmithdatabase') or die('Error connecting to MySQL server.');
+    $connection = mysqli_connect('localhost', 'williamchirico', 'williamchiricopass', 'williamchiricodatabase') or die('Error connecting to MySQL server.');
 
     $sql = "INSERT INTO Answer (Username, Answer, QuestionId) VALUES ('$username', '$answer', $questionId)";
 
@@ -40,7 +40,7 @@ function postAnswer($username, $answer, $questionId)
 
 function getAnswers($questionId)
 {
-    $connection = mysqli_connect('localhost', 'johnsmith', 'pass', 'johnsmithdatabase') or die('Error connecting to MySQL server.');
+    $connection = mysqli_connect('localhost', 'williamchirico', 'williamchiricopass', 'williamchiricodatabase') or die('Error connecting to MySQL server.');
 
     $sql = "SELECT * FROM Answer WHERE QuestionId='$questionId'";
 
