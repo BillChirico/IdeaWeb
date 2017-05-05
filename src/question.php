@@ -3,9 +3,9 @@
 
     $id = $_GET['id'];
 
-    $r = getQuestion($id);
+    /*$r = getQuestion($id);
 	
-	$answers = getAnswers($id);
+	answers = getAnswers($id);*/
 ?>
 
 <html>
@@ -18,6 +18,15 @@
    <header>
    		<a href="home.html" class="header">Idea Web</a>
    </header>
+   
+   <center>
+	   </br>
+	</br>
+  	<a href="listQuestions.php" style="color:white">Question List</a>  
+	</br>
+  	</br>
+     <?php    echo '<a href="answerQuestion.php?id=' . $id .  '" style="color:white">Answer Question</a>';    ?>
+   </center>
 
    <div class="showquestion">
    		<h3>User: <?php echo $r['Username'] ?></h3>

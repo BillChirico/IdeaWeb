@@ -12,6 +12,12 @@
 	<header>
 		<a href="home.html" class="header">Idea Web</a>
 	</header>
+	
+	<center>
+		</br>
+		</br>
+	<a href="question.php" style="color:white">Ask a question</a></h4>
+	</center>
  
  <div class="questionlist">
  
